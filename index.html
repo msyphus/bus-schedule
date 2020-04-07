@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -36,6 +37,44 @@
     <title>Bus Schedule</title>
 </head>
 <body>
+    <header>
+        <h1>Speedway Bus Company</h1>
+        <h2>Real-time Route Information</h2>
+    </header>
+
+    <div class="schedule">
+        <table id="routeTable">
+            <tr>
+                <th>Route Number</th>
+                <th>Destination</th>
+                <th>Frequency (min)</th>
+                <th>Next Arrival</th>
+                <th>Minutes Left</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="addRoute">
+        <form>
+            <label>Route Name:</label>
+            <br>
+            <input class="field" type="text" placeholder="Ex. R451">
+            <br>
+            <label>Destination:</label>
+            <br>
+            <input class="field" type="text" placeholder="Ex. Salt Lake City">
+            <br>
+            <label>First Bus Time (24-hour Clock)</label>
+            <br>
+            <input class="field" type="time" placeholder="Ex. 17:30">
+            <br>
+            <label>Frequency (min):</label>
+            <br>
+            <input class="field" type="number" placeholder="Ex. 15">
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
     
 </body>
 </html>

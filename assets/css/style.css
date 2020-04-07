@@ -1,0 +1,17 @@
+header {
+    border: 3px solid black;
+    background-color: #2429ff;
+    color:#ffd10A;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-style: italic;
+}
